@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Profile</h2>
+        <button onclick="Logout();" style="float: right;">LogOut</button>
+        <hr>
+        <h3>Welcome</h3>
+        <h4>Email:
+            <script>
+                document.write(localStorage.getItem('email'));
+                document.write(localStorage.getItem('psw'));
+            </script>
+        </h4>
+    </div>
+
+    <script>
+        let email=localStorage.getItem('email')?localStorage.getItem('email'):''
+       // console.log(email);
+        if(email=='')
+        {
+            alert('you need to login first');
+            window.location.href = "Login_Local_storage.html";
+        }
+        function Logout() {
+            localStorage.removeItem('email');
+            // localStorage.removeItem('psw');
+            window.location.href = "Login_Local_storage.html";
+        }
+    </script>
+</body>
+
+</html>

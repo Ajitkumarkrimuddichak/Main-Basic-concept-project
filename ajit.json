@@ -1,0 +1,186 @@
+[    
+    { 
+        "id": 1,
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "email": "ajitkumar10897@gmail.com",
+        "address": {
+            "street": "kulas light",
+            "suite": "Api.556",
+            "city": "patna",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "company": {
+            "name": "Romaguera-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-marketts"
+        }
+    },
+    {
+        "id": 2,
+        "name": "mukul kumar",
+        "username": "mukul",
+        "email": "kumar10897@gmail.com",
+        "address": {
+            "street": "light",
+            "suite": "Api.5563",
+            "city": "masaurhi",
+            "zipcode": "92998-387452",
+            "geo": {
+                "lat": "-37.31596",
+                "lng": "81.14967"
+            }
+        },
+        "phone": "1-770-736-8051 x56442",
+        "website": "hildegard.orgg",
+        "company": {
+            "name": "Mukul-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-marketts"
+        }
+    },
+    {
+        "id": 3,
+        "name": "bhusan",
+        "username": "bhusan",
+        "email": "bhusankumar10897@gmail.com",
+        "address": {
+            "street": "bhusan light",
+            "suite": "Api.446",
+            "city": "nadwan",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-666-8031 x56442",
+        "website": "hillll.org",
+        "company": {
+            "name": "Bhusan-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-marketts"
+        }
+    },
+    {
+        "id": 4,
+        "name": "chhotu kumar",
+        "username": "chhotu",
+        "email": "chhotukumar10897@gmail.com",
+        "address": {
+            "street": "chotu light",
+            "suite": "Api.999",
+            "city": "krimuddin",
+            "zipcode": "92558-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-999-736-8031 x56442",
+        "website": "hshhsg.org",
+        "company": {
+            "name": "chhotu-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-marketts"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Anand kumar",
+        "username": "anand",
+        "email": "anandkumar10897@gmail.com",
+        "address": {
+            "street": "kulas light",
+            "suite": "Api.111",
+            "city": "krimuddin chak",
+            "zipcode": "92998-5574",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "anand.org",
+        "company": {
+            "name": "anand-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-marketts"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Rakesh kumar",
+        "username": "rakesh",
+        "email": "rakeshkumar10897@gmail.com",
+        "address": {
+            "street": "kulll light",
+            "suite": "Api.336",
+            "city": "pothahi",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-880-736-8031 x56442",
+        "website": "rakeshrd.org",
+        "company": {
+            "name": "Rakesh-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-marketts"
+        }
+    },
+    {
+        "id": 7,
+        "name": "nepali",
+        "username": "nepali",
+        "email": "nepalikumar10897@gmail.com",
+        "address": {
+            "street": "nepali light",
+            "suite": "Api.596",
+            "city": "chapor",
+            "zipcode": "98898-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hnepagard.org",
+        "company": {
+            "name": "nepali-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-marketts"
+        }
+    },
+    {
+        "id": 8,
+        "name": "sukhu kumar",
+        "username": "sukhu",
+        "email": "sukhukumar10897@gmail.com",
+        "address": {
+            "street": "sukhu light",
+            "suite": "Api.256",
+            "city": "niravan",
+            "zipcode": "926668-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "company": {
+            "name": "sukhu-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-marketts"
+        }
+    }
+] 

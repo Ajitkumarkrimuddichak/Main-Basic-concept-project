@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage or Web Storage in JavaScript</title>
+</head>
+<body>
+    <h1>local Storage</h1>
+    <input id="ibox" type="text" placeholder="Enter The Value">
+    <button id="ibtn">Enter</button>
+    <button id="re">Remove</button>
+
+    <script>
+        let arr=[];
+        document.getElementById("ibtn").onclick = () =>{
+            let y = document.getElementById("ibox").value;//dinamic value user input value
+            arr.push(y)
+            localStorage.setItem("movies",JSON.stringify(arr));//json.stringify value convert string
+            //localStorage.setItem("movies","robot2");
+            //localStorage.setItem("movies2","chitti");
+
+            let w = JSON.parse(localStorage.getItem("movies"));//json.parse array bana dega
+            console.log(w[0])//jobhi value enter karoge first value print hoga [0] index hai
+        }
+        document.getElementById("re").onclick = () =>{
+            //localStorage.removeItem("movies");
+            localStorage.clear();
+        }
+
+    </script>
+</body>
+</html>

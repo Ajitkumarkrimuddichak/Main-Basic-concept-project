@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Addition of two martix in javascript</h2>
+    <script>
+        var i,j;
+        let firstarr=[
+            [11,12,13],
+            [14,15,16],
+            [17,18,19]
+            ];
+        let secondarr=[
+            [13,12,11],
+            [16,15,14],
+            [19,18,17]
+            ];
+        let addarr=[
+            [0,0,0],
+            [0,0,0],
+            [0,0,0]
+            ];
+            document.write("<br>");
+            document.write("Enter the first array:<br>");
+            for(i=0;i<=2;i++){
+                for(j=0;j<=2;j++){
+                    document.write(firstarr[i][j]+" ");
+                }
+                document.write("<br>");
+            }
+            document.write("<br>");
+            document.write("Enter the second array:<br>");
+            for(i=0;i<=2;i++){
+                for(j=0;j<=2;j++){
+                    document.write(secondarr[i][j]+" ");
+                }
+                document.write("<br>");
+            }
+            document.write("<br>");
+            document.write("Addition of two  array:<br>");
+            for(i=0;i<=2;i++){
+                for(j=0;j<=2;j++){
+                 addarr[i][j]=firstarr[i][j]+secondarr[i][j];
+                 document.write(addarr[i][j]+" ");
+                }
+                document.write("<br>");
+            }  
+    </script>
+</body>
+</html>
+   

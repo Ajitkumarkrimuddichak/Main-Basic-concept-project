@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            background-color: rgba(168, 28, 94, 0.747);
+            text-align: center;
+            margin-top: 30px;
+            color: wheat;
+            height: 100px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <form><br>
+        <label>Even Number Chack</label><br>
+        <label>Enter Number</label><br>
+        <input type="number" name="" id="oddeven" onkeyup="isCheck()">
+        <span id="showmsg"></span>
+    </form>
+    <script>
+        function isCheck() {
+            var num = document.getElementById('oddeven').value;
+            if((num % 2) === 0){
+                document.getElementById('showmsg').innerHTML = " Hurray! "  +num+  " is even Number";
+            }else{
+                document.getElementById('showmsg').innerHTML = " Oh No! "  +num+  " is Not even Number";
+            }
+            if(num == ""){
+                document.getElementById('showmsg').innerHTML = "";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

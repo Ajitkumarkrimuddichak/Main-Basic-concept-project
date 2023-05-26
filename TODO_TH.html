@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create a Search Bar and Filter using Javascript</h>
+        <h2 style=" text-transform: uppercase;color: green;">MY Friends</h2>
+        <input type="text" name="" id="myInput" placeholder="names.."  onkeyup="searchFun()">
+        <table id="myTable" style="text-align: center;">
+            <tr class="header">
+                <th style="width: 40%;">Name</th> 
+                <th style="width: 40%;">Degree</th> 
+                <th style="width: 40%;">Profession</th>
+            </tr>
+            <tr>
+                <td>Vinod</td>
+                <td>MCS</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Ajit</td>
+                <td>B.Tech</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Suman</td>
+                <td>b.tech</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Adarsh</td>
+                <td>CSE</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Raju</td>
+                <td>Dipaloma</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Cotu</td>
+                <td>BAC</td>
+                <td>Tester Developer</td>
+            </tr>
+            <tr>
+                <td>Rakesh</td>
+                <td>Shoper ciper</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Bhushan</td>
+                <td>Cochin</td>
+                <td>POwer point Developer</td>
+            </tr>
+            <tr>
+                <td>Saurabh</td>
+                <td>BE</td>
+                <td>ISO Developer</td>
+            </tr>
+            <tr>
+                <td>Rani</td>
+                <td>MCS</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Sumanth</td>
+                <td>MCS</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Nagesh</td>
+                <td>MCS</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Laki</td>
+                <td>MCS</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Labi</td>
+                <td>MCS</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Mayank</td>
+                <td>MCS</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Ishu</td>
+                <td>MCS</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Abhishekh</td>
+                <td>MCS</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Mahendar</td>
+                <td>MCS</td>
+                <td>Full Stack Developer</td>
+            </tr>
+        </table>
+        <script>
+            const searchFun = () =>{
+                let filter = document.getElementById('myInput').value.toUpperCase();
+                let myTable = document.getElementById('myTable');
+                let tr = myTable.getElementsByTagName('tr');
+                for(var i=0; i<tr.length;i++)
+                {
+                    let td = tr[i].getElementsByTagName('td')[0];
+                    if(td){
+                        let textvlaue = td.textContent || td.innerHTML;
+                        if(textvlaue.toUpperCase().indexOf(filter) > -1){
+                            tr[i].style.display = "";
+                        }else{
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+        </script>
+</body>
+</html>

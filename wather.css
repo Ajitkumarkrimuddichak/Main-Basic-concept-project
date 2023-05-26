@@ -1,0 +1,42 @@
+body {
+    background: radial-gradient(circle,
+            rgba(63, 94, 251, 1) 0%,
+            rgba(252, 70, 107, 1) 100%);
+}
+
+.container {
+    color: rgb(85, 151, 209);
+    margin-top: 2rem;
+    max-width: 25rem;
+    background: radial-gradient(circle,
+            rgb(9, 40, 179) 0.2%,
+            rgb(226, 16, 58) 100%);
+            border-radius: 10px;
+            box-shadow: 5px 8px 10px #ccc;
+}
+#weatherwidget{
+    min-height: 18rem; 
+    background: #fff;
+    border-radius: 10px;
+}
+.card{
+    width: 100%;
+}
+.card .card-subtitle{
+    font-size: 4rem;
+
+}
+.card .cel:after{
+    content: "°C";
+    position: absolute;
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+    font-weight: 400;
+}
+.card .far:after{
+    content: "°F";
+    position: absolute;
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+    font-weight: 400;
+}

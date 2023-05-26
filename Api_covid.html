@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>covid19 in india api</h2>
+    <script>
+        async function gatCovidapi() {
+            const jsondata = await fetch('https://api.covid19api.com/summary');
+            const jsdata = await jsondata.json();
+            console.log(jsdata);
+            const country_name = jsdata.Countries[76];
+            document.write(` Current Date  update ${country_name.Date}.<br>
+            The name of tha country is ${country_name.Country}.<br> 
+            New case in India covid_19 Cases ${country_name.NewConfirmed}.<br>
+            TotalConforem cases here is ${country_name.TotalConfirmed}.<br>
+            TotalDeaths cases here is ${country_name.TotalDeaths}.<br>
+             Total Recovery cases in india ${country_name.TotalRecovered}. 
+             `);
+
+        }
+        gatCovidapi();
+    </script>
+</body>
+
+</html>

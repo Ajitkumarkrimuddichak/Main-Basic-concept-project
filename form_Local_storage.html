@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fome in local storage in javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Reg.Form</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="User name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Email">
+            </div>
+
+            <div class="form-group">
+                <label for="psw">Password</label>
+                <input type="password" class="form-control" id="psw" placeholder="password">
+            </div>
+            <button type="button" onclick="saveData()" id="save_btn" class="btn btn-danger m-2">Submit</button>
+            <!--functio calling-->
+        </form>
+    </div>
+    <script>
+        function saveData() {
+            let name, email, psw;
+            name = document.getElementById("name").value;//local storage me set karana haia
+            email = document.getElementById("email").value;
+            psw = document.getElementById("psw").value;
+     
+
+            let user_records=new Array();
+            user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+
+            if(user_records.some((v)=>{return v.email==email}))
+            {
+                alert("duplicate data");
+            }
+            else
+            {
+                user_records.push({
+                "name":name,
+                "email":email,
+                "psw":psw
+                })   
+            localStorage.setItem("users", JSON.stringify(user_records)); 
+            }//array me value store karane ja rahe ho to json stringify use karo 
+            //array data store karana hai to push function used kiya jata hai
+            
+            //localStorage.setItem("email", email)//same name ka key nahi ho sakata hai
+            // localStorage.setItem("psw", psw)
+            // //first value of key and second value hota jaha se aapako value dena hai
+        }
+    </script>
+</body>
+
+</html>
